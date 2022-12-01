@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/be_our_voice.jpg";
 import voice from "../../Assets/14.jpeg";
@@ -12,7 +12,27 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import Particle from "../Particle";
 
+import {  HashLink } from 'react-router-hash-link';
+import {
+  MdOutlineTheaterComedy,
+  MdHowToVote
+}
+from "react-icons/md";
+
+
 export default function About() {
+
+  const [expand, updateExpanded] = useState(false);
+  const [navColour, updateNavbar] = useState(false);
+
+  function scrollHandler() {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
+
   return (
 
     <Container fluid id="about">
@@ -76,15 +96,21 @@ export default function About() {
 
           <Col md={4} className="myAvtar">
             {/* <img src="assets/20.jpeg" className="img-fuild" width={400} /> */}
-            <div className="title"> Please sign our petition and stand with us.
+            <div className="title"> Please sign    <HashLink className="petition-bold" smooth to="/petition" 
+            
+              onClick={() => updateExpanded(false)}
+
+            >
+              <MdHowToVote style={{ marginBottom: "2px" }} /> Petition
+            </HashLink> our petition and <div className="title-bold">stand with us.</div>
             </div>
-            <img src="assets/زن زندگی آزادی/51.webp" className="img-fluid" style={{ paddingTop: 40 }} />
+            <img src="assets/زن زندگی آزادی/51.webp" className="img-fluid" style={{ paddingTop: 5 }} />
 
 
 
             <br />
             <br />
-         
+
 
           </Col>
 
@@ -95,14 +121,14 @@ export default function About() {
           <Col md={12} className="home-about-social">
             <h1></h1>
             <p>
-              <a href="iranianscholarsforliberty.com" className="purple">Iranian Scholars for Liberty</a> is a group of Iranian scholars who are fighting for the freedom of Iran.
+              <a href="https://www.iranianscholarsforliberty.com/" className="purple">Iranian Scholars for Liberty</a> is a group of Iranian scholars who are fighting for the freedom of Iran.
             </p>
 
 
           </Col>
         </Row>
       </Container>
-    </Container>
+    </Container >
   );
 }
 

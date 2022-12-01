@@ -18,11 +18,9 @@ export default function Gallery({ category = "all" }) {
     const chained_div = (
         <div>
             <Row style={{ justifyContent: "center" }}>
-                <div className="title" style={{color:"white"}}> Only  <b className="purple">{images.length}</b>  out of <b className="purple">+15000</b> Prisoners</div>
+                <div className="title" style={{color:"white"}}>  <b className="purple">For our +15000 Loved ones </b> </div> 
             </Row>
-            <Row style={{ justifyContent: "center" }} >
-                <b className="sub-title"> Just for <b className="purple">peacefully</b> protesting</b>
-            </Row>
+           
         </div>
     )
 

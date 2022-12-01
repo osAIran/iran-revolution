@@ -112,7 +112,7 @@ function NavBar() {
                 to="/lyrics"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> For (Lyrics)
+                <CgFileDocument style={{ marginBottom: "2px" }} /> For
               </Nav.Link>
             </Nav.Item>
 
@@ -123,7 +123,7 @@ function NavBar() {
                 to="/students-in-chains"
                 onClick={() => updateExpanded(false)}
               >
-                <GiCrimeSceneTape style={{ marginBottom: "2px" }} />Our Prisoners 
+                <GiCrimeSceneTape style={{ marginBottom: "2px" }} />Our Loved ones 
               </Nav.Link>
             </Nav.Item>
 

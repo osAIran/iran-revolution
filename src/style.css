@@ -782,3 +782,18 @@ button:focus {
   color: white;
   text-decoration: none !important;
 }
+
+
+.title-bold {
+  font-weight: bold;
+  color: var(--imp-text-color);
+  font-size: 1.3em;
+  
+}
+.petition-bold{
+  font-weight: bold;
+  color: var(--imp-text-color);
+  font-size: 1.17em;
+  text-align: center;
+
+}
