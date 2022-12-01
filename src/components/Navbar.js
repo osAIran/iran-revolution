@@ -67,7 +67,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item style={{paddingTop: 12}} >
-              <HashLink smooth to="/#home"  className="no-hyperlink"
+              <HashLink smooth to="/petition"  className="no-hyperlink"
                                 onClick={() => updateExpanded(false)}
 
               >

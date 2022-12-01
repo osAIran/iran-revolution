@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import About from "./components/Home/About";
+import Revolution from "./components/Home/Revolution";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Lyrics from "./components/PDFPage/PDFView";
@@ -36,10 +36,11 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<Revolution />} />
+          <Route path="/petition" element={<Home />} />
           <Route path="/you-can-help-us" element={<Home />} />
           <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<Revolution />} />
           <Route path="/lyrics" element={<Lyrics />} />
           <Route path="/art" element={<Gallery />} />
           <Route path="/students-in-chains" element={<Gallery  category={"chain"} />} />

@@ -3,18 +3,18 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-import About from "./About";
+import Revolution from "./Revolution";
 import Type from "./Type";
 
-import HomePage from "./Homepage";
+import Petition from "../Petition/Petition";
 
 function Home() {
 
   return (
     <section>
       
-      <HomePage />
-      <About />
+      <Petition />
+      <Revolution />
 
     </section>
   );
