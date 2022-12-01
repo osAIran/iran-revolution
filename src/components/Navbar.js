@@ -8,24 +8,23 @@ import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import { NavHashLink, HashLink } from 'react-router-hash-link';
 import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser
+
+  AiTwotoneHeart
 } from "react-icons/ai";
 
 import {
   MdOutlineTheaterComedy,
   MdHowToVote
 }
-from "react-icons/md";
+
+  from "react-icons/md";
 
 import {
   GiVote,
   GiRevolt,
   GiCrimeSceneTape
 }
-from "react-icons/gi";
+  from "react-icons/gi";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -52,7 +51,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-        <img src="assets/revolution.png" className="img-fluid logo" /> <b className="purple" style={{paddingLeft:2}}>Women Life Freedom</b>
+          <img src="assets/revolution.png" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 2 }}>Women Life Freedom</b>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -66,25 +65,25 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item style={{paddingTop: 12}} >
-              <HashLink smooth to="/petition"  className="no-hyperlink"
-                                onClick={() => updateExpanded(false)}
+            <Nav.Item style={{ paddingTop: 12 }} >
+              <HashLink smooth to="/petition" className="no-hyperlink"
+                onClick={() => updateExpanded(false)}
 
               >
                 <MdHowToVote style={{ marginBottom: "2px" }} /> Petition
               </HashLink>
             </Nav.Item>
 
-            <Nav.Item style={{paddingTop: 12 , paddingRight:12, paddingLeft:12}} >
-            <HashLink smooth to="/#about" className="no-hyperlink"
-                              onClick={() => updateExpanded(false)}
+            <Nav.Item style={{ paddingTop: 12, paddingRight: 12, paddingLeft: 12 }} >
+              <HashLink smooth to="/#about" className="no-hyperlink"
+                onClick={() => updateExpanded(false)}
 
-            >
-            <GiRevolt style={{ paddingTop:0 }} /> Revolution
-               </HashLink>
-              
+              >
+                <GiRevolt style={{ paddingTop: 0 }} /> Revolution
+              </HashLink>
 
-                {/* <Nav.Link
+
+              {/* <Nav.Link
                   as={Link}
                   to="#about"
                   onClick={() => updateExpanded(false)}
@@ -123,7 +122,9 @@ function NavBar() {
                 to="/students-in-chains"
                 onClick={() => updateExpanded(false)}
               >
-                <GiCrimeSceneTape style={{ marginBottom: "2px" }} />Our Loved ones 
+
+                <div className="purple-navbar">
+                  <AiTwotoneHeart className="purple-navbar" style={{ marginBottom: "2px", margin: 0 }} />  Our Loved ones </div>
               </Nav.Link>
             </Nav.Item>
 
