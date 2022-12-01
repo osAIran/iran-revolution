@@ -7,3 +7,16 @@
    
 }
 
+
+.title {
+    color: wheat;
+    font-size: 2em;
+
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 1.5em;
+    }
+}
+    

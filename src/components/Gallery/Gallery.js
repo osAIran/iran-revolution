@@ -6,33 +6,46 @@ import { useEffect } from "react";
 import './Gallery.css'
 import GetImages from './Data.js'
 
-export default function Gallery( {category = "all"}) {
+export default function Gallery({ category = "all" }) {
 
     console.log(category)
     const images = GetImages(category)
 
-    useEffect(() => {
-        document.body.style.zoom = "90%";
-      }, []);
+    // useEffect(() => {
+    //     document.body.style.zoom = "90%";
+    // }, []);
+
+    const chained_div = (
+        <div>
+            <Row style={{ justifyContent: "center" }}>
+                <div className="title" style={{color:"white"}}> Only {images.length + 1} out of <b className="purple">+15000</b> Prisoners</div>
+            </Row>
+            <Row style={{ justifyContent: "center" }} >
+                <b className="title"> Just for <b className="purple">peacefully</b> protesting</b>
+            </Row>
+        </div>
+    )
 
     return (
-        <div style={{paddingTop:80}}>
+        <div style={{ paddingTop: 80 }}>
 
             <Container>
 
-                <Row  >
-                        {
-                            images.map((item, index) => {
-                                return (
-                                    <Col >
-                                    <div style={{padding:30}}>
-                                    <img src={item}  className="image" />
-                                    </div>
-                                    </Col>
-                                )
-                            })
+                { category === "chain" ? chained_div : null}
 
-                        }
+                <Row  >
+                    {
+                        images.map((item, index) => {
+                            return (
+                                <Col >
+                                    <div style={{ padding: 30 }}>
+                                        <img src={item} className="image" />
+                                    </div>
+                                </Col>
+                            )
+                        })
+
+                    }
 
 
                 </Row>
