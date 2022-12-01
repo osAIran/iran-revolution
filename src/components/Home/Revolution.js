@@ -101,8 +101,9 @@ export default function About() {
               onClick={() => updateExpanded(false)}
 
             >
-              <MdHowToVote style={{ marginBottom: "2px" }} /> Petition
-            </HashLink> our petition and <div className="title-bold">stand with us.</div>
+              <MdHowToVote className="" style={{ marginBottom: "2px" }} />Our Petition 
+              
+            </HashLink> <div className="title-bold">Stand with us</div>
             </div>
             <img src="assets/زن زندگی آزادی/51.webp" className="img-fluid" style={{ paddingTop: 5 }} />
 

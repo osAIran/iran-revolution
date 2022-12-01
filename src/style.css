@@ -24,8 +24,7 @@ html {
 
 .purple-navbar {
   color: var(--imp-text-color) !important;
-  padding: 0;
-  margin: 0;
+
   
 }
 
@@ -800,7 +799,7 @@ button:focus {
 .petition-bold{
   font-weight: bold;
   color: var(--imp-text-color);
-  font-size: 1.17em;
+  font-size: 1.09em;
   text-align: center;
 
 }
