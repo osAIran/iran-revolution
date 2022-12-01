@@ -680,6 +680,13 @@ button:focus {
   padding-bottom: 30px;
 }
 
+title -bold {
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
@@ -799,7 +806,7 @@ button:focus {
 .petition-bold{
   font-weight: bold;
   color: var(--imp-text-color);
-  font-size: 1.09em;
+  font-size: 1.05em;
   text-align: center;
 
 }

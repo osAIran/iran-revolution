@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/be_our_voice.jpg";
 import voice from "../../Assets/14.jpeg";
@@ -12,26 +12,32 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import Particle from "../Particle";
 
-import {  HashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import {
   MdOutlineTheaterComedy,
   MdHowToVote
 }
-from "react-icons/md";
+  from "react-icons/md";
 
+import { CSSTransition } from 'react-transition-group';
+import GetImages from "../Gallery/Data";
+import "./ImageAnim.css";
 
 export default function About() {
 
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const images = GetImages('all');
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
+  const [image, setImage] = useState(images[0]);
+
+  const [inProp, setInProp] = useState(false);
+  const nodeRef = useRef(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setImage(images[Math.floor(Math.random() * images.length)]);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [images]);
 
   return (
 
@@ -60,7 +66,7 @@ export default function About() {
               <br />
 
 
-              We are fighting for <b className="purple">children's</b> lives and future. We are fighting against child murder, marriage, labor and abuse.
+              We are fighting for <b className="purple">children</b> and future. We are fighting against child murder, marriage, labor and abuse.
 
 
               {/* <b className="purple-bold"> 13</b> is the minimum age of marriage for girls under islamic law and we will not let it stay for long. */}
@@ -70,7 +76,7 @@ export default function About() {
               <br />
 
 
-              We are fighting for <b className="purple">justice</b> for crimes against humanity, and we will not stop until the trial of <b className="red">Ali Khamenei</b> is held in <b className="purple">Iran</b>.
+              We are fighting for <b className="purple">justice</b> for crimes against humanity and we will not stop until the trial of <b className="red">Ali Khamenei</b> is held in <b className="purple">Iran</b>.
               <br />
               <br />
 
@@ -96,16 +102,22 @@ export default function About() {
 
           <Col md={4} className="myAvtar">
             {/* <img src="assets/20.jpeg" className="img-fuild" width={400} /> */}
-            <div className="title"> Please sign    <HashLink className="petition-bold" smooth to="/petition" 
-            
-              onClick={() => updateExpanded(false)}
+            <div className="title"> Please sign    <HashLink className="petition-bold" smooth to="/petition"
+
+
 
             >
-              <MdHowToVote className="" style={{ marginBottom: "2px" }} />Our Petition 
-              
+              <MdHowToVote style={{ marginBottom: "2px" }} /> Our Petition
+
             </HashLink> <div className="title-bold">Stand with us</div>
             </div>
-            <img src="assets/زن زندگی آزادی/51.webp" className="img-fluid" style={{ paddingTop: 5 }} />
+            <div className="img-fluid" style={{ paddingTop: 5 }}>
+              <CSSTransition nodeRef={nodeRef} in={inProp} timeout={2000}>
+
+                <img src={image} className="item" />
+              </CSSTransition>
+
+            </div>
 
 
 
