@@ -51,7 +51,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-        <img src="assets/icon.svg" className="img-fluid logo" /> <b className="purple" style={{paddingLeft:2}}>WLF Revolution</b>
+        <img src="assets/revolution.png" className="img-fluid logo" /> <b className="purple" style={{paddingLeft:2}}>Woman Life Freedom</b>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
