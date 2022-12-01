@@ -14,9 +14,18 @@
 
 }
 
+.sub-title {
+    color: wheat;
+    font-size: 1.8em;
+
+}
 @media screen and (max-width: 600px) {
     .title {
         font-size: 1.5em;
+    }
+
+    .sub-title {
+        font-size: 1.3em;
     }
 }
     

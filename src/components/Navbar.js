@@ -123,7 +123,7 @@ function NavBar() {
                 to="/students-in-chains"
                 onClick={() => updateExpanded(false)}
               >
-                <GiCrimeSceneTape style={{ marginBottom: "2px" }} /> Prisoners 
+                <GiCrimeSceneTape style={{ marginBottom: "2px" }} />Our Prisoners 
               </Nav.Link>
             </Nav.Item>
 
