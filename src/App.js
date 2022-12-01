@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Lyrics from "./components/Resume/ResumeNew";
+import Lyrics from "./components/PDFPage/PDFView";
 import Gallery from "./components/Gallery/Gallery";
 import {
   BrowserRouter as Router,
@@ -42,6 +42,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/lyrics" element={<Lyrics />} />
           <Route path="/art" element={<Gallery />} />
+          <Route path="/students-in-chains" element={<Gallery  category={"chain"} />} />
+
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

@@ -86,7 +86,7 @@ export default function About() {
           <Col md={4} className="myAvtar">
             {/* <img src="assets/20.jpeg" className="img-fuild" width={400} /> */}
 
-            <img src="assets/زن زندگی آزادی/51.jpg" className="img-fluid" style={{ paddingTop: 40 }} />
+            <img src="assets/زن زندگی آزادی/51.webp" className="img-fluid" style={{ paddingTop: 40 }} />
           </Col>
             
         </Row>

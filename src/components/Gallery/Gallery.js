@@ -6,9 +6,10 @@ import { useEffect } from "react";
 import './Gallery.css'
 import GetImages from './Data.js'
 
-export default function Gallery() {
+export default function Gallery( {category = "all"}) {
 
-    const images = GetImages()
+    console.log(category)
+    const images = GetImages(category)
 
     useEffect(() => {
         document.body.style.zoom = "90%";

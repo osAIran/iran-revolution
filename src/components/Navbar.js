@@ -22,7 +22,8 @@ from "react-icons/md";
 
 import {
   GiVote,
-  GiRevolt
+  GiRevolt,
+  GiCrimeSceneTape
 }
 from "react-icons/gi";
 
@@ -111,7 +112,18 @@ function NavBar() {
                 to="/lyrics"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Lyrics
+                <CgFileDocument style={{ marginBottom: "2px" }} /> For (Lyrics)
+              </Nav.Link>
+            </Nav.Item>
+
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/students-in-chains"
+                onClick={() => updateExpanded(false)}
+              >
+                <GiCrimeSceneTape style={{ marginBottom: "2px" }} /> Prisoners 
               </Nav.Link>
             </Nav.Item>
 

@@ -40,27 +40,7 @@ function ResumeNew() {
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
 
-          {files.map((file, index) => {
-            return (
-              <div
-                md={3}
-                style={{
-                  padding: 20,
-                }}>
-                <Button
 
-                  variant="primary"
-                  href={file.url}
-                  target="_blank"
-                  style={{}}
-                >
-                  <AiOutlineDownload />
-                  &nbsp;{file.title}
-                </Button>
-              </div>
-            )
-
-          })}
 
 
           {/* <Button
@@ -75,7 +55,7 @@ function ResumeNew() {
         </Row>
 
         {
-          files.map((file, index) => {
+          files.slice(1, 2).map((file, index) => {
             return (
               <div
               >
@@ -95,6 +75,27 @@ function ResumeNew() {
           })
         }
 
+        {files.map((file, index) => {
+          return (
+            <div
+              md={3}
+              style={{
+                padding: 20,
+              }}>
+              <Button
+
+                variant="primary"
+                href={file.url}
+                target="_blank"
+                style={{}}
+              >
+                <AiOutlineDownload />
+                &nbsp;{file.title}
+              </Button>
+            </div>
+          )
+
+        })}
 
 
       </Container>
