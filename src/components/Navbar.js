@@ -52,7 +52,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-        <img src="assets/revolution.png" className="img-fluid logo" /> <b className="purple" style={{paddingLeft:2}}>Woman Life Freedom</b>
+        <img src="assets/revolution.png" className="img-fluid logo" /> <b className="purple" style={{paddingLeft:2}}>Women Life Freedom</b>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

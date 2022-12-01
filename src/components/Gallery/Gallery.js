@@ -11,9 +11,9 @@ export default function Gallery({ category = "all" }) {
     console.log(category)
     const images = GetImages(category)
 
-    // useEffect(() => {
-    //     document.body.style.zoom = "90%";
-    // }, []);
+    useEffect(() => {
+        document.body.style.zoom = "90%";
+    }, []);
 
     const chained_div = (
         <div>

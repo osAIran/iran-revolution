@@ -16,6 +16,7 @@ This is a website for Iran's 2022 Revolution. A revolution that will bring freed
 4. Translation to other languages (Farsi, Kurdish, Turkish, etc.)
 5. Petition's page background should be changed into a moving images of the artworks.
 
+
 ## How to contribute
 
 1. Make a fork of this repository.

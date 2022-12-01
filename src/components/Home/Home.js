@@ -12,6 +12,7 @@ function Home() {
 
   return (
     <section>
+      
       <HomePage />
       <About />
 

@@ -96,9 +96,9 @@ export default function HomePage() {
     return (
         <div>
 
+<Particle />
 
             <Container fluid className="home-section" id="home"  >
-                <Particle />
 
                 <Container className="home-content">
 
@@ -112,7 +112,7 @@ export default function HomePage() {
 
                             {/* <h1 className="heading-name">
                 
-              <strong className="main-name"> Woman Life Liberty</strong>
+              <strong className="main-name"> Women Life Liberty</strong>
               </h1> */}
 
                             <div style={{ paddingTop: 10, paddingBottom: 10, textAlign: "left" }}>

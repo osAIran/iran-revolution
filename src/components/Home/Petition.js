@@ -13,7 +13,7 @@ export default function Petition({ title, url, buttonText, signed, goal }) {
                 {title}
             </div>
 
-            <Button className="home-about-social" style={{ padding: 10, paddingBottom: 20 }} href={url} target="_blank" rel="noreferrer">{buttonText}</Button>
+            <Button className="home-about-social" style={{ padding: 10, paddingBottom: 10, justifyContent:"center",  }} href={url} target="_blank" rel="noreferrer">{buttonText}</Button>
             {/* <Count number={15000} duration={1} /> */}
             {
                 goal == -1 ? <div></div> : <Counter signed={signed} qouta={goal} style={{ padding: 10 }} />

@@ -7,9 +7,9 @@ function Type() {
       options={{
         strings: [
           "Femme, Vie, Liberté",
-          "Woman Life Liberty",
+          "Women Life Liberty",
           "زن زندگی آزادی",
-          "Woman Life Freedom",
+          "Women Life Freedom",
           "Jin Jiyan Azadî",
           "Vrouw Leven Vrijheid",
           "امرأة حياة حرية",

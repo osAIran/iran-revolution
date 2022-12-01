@@ -64,7 +64,7 @@ export default function About() {
               <b className="purple-bold">We Shall Prevail</b>
               <br />
               <br />
-              <b className="purple-bold">Woman Life Freedom</b>
+              <b className="purple-bold">Women Life Freedom</b>
               <br />
               <b className="purple-bold">Human Life Liberty</b>
               
