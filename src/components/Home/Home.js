@@ -14,7 +14,7 @@ function Home() {
     <section>
       
       <Petition />
-      <Revolution />
+      {/* <Revolution /> */}
 
     </section>
   );
