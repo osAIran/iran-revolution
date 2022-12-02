@@ -21,7 +21,7 @@ import {
 
 import { CSSTransition } from 'react-transition-group';
 import GetImages from "../Gallery/Data";
-import "./ImageAnim.css";
+import "./Revolution.css";
 
 export default function About() {
 
@@ -50,7 +50,12 @@ export default function About() {
 
 
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em", textAlign: "left" }}>
+            <h1 style={{ fontSize: "2.7em", justifyContent: "center" }}>
+                <img className="icon_img"
+                  src="https://ik.imagekit.io/hcdblkujo/meta.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669941978435"
+
+
+                />
               <span className="purple"> Iran's 2022 Revolution </span>
             </h1>
             <p className="home-about-body">
