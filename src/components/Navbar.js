@@ -51,7 +51,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src="assets/icon.webp" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 4 ,  paddingRight:0}}>Women Life Freedom</b>
+          <img src="https://ik.imagekit.io/hcdblkujo/meta.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669941978435" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 4 ,  paddingRight:0}}>Women Life Freedom</b>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

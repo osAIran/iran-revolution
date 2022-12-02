@@ -36,3 +36,9 @@
         
     }
 }
+.bg_image{
+    background-repeat: repeat;
+    opacity: 0.4;
+    width: 50%;
+    
+}
