@@ -14,7 +14,7 @@ function Footer() {
     <Container fluid className="footer" style={{background:"transparent"}}>
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by the Iranian Revolutionary Scholars</h3>
+          <h3>Designed and Developed by Iranian Revolutionary Scholars</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} WLF</h3>
