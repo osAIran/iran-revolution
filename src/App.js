@@ -54,7 +54,7 @@ function App() {
 
         <Footer />
         <div>
-          <img className="bg-repeat" src="assets/15.webp" style={{ position: "absolute", left: 50, bottom: 0 }}>
+          <img className="bg-repeat" src="assets/15.webp" style={{ position: "absolute", left: 20, bottom: -20 }}>
           </img>
         </div>
         <Particle />

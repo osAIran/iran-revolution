@@ -91,7 +91,7 @@ button:focus {
   background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(17, 27, 21, 0.171) !important;
-  backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(30px) !important;
 
 }
 
@@ -101,9 +101,20 @@ button:focus {
   padding: 0.3rem 1rem !important;
   font-size: 1.2rem !important;
   min-height: 9%;
-  backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(30px) !important;
 
 }
+
+.navbar-transparent {
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  padding: 0.3rem 1rem !important;
+  font-size: 1.2rem !important;
+  min-height: 9%;
+  backdrop-filter: blur(3px) !important;
+
+}
+
 
 .navbar-toggler {
   position: relative !important;
@@ -164,7 +175,8 @@ button:focus {
     background-color: #1b1a2ea9 !important;
 
   }
-
+  
+  
   .navbar-nav .nav-item a::after {
     display: none !important;
 
@@ -303,15 +315,13 @@ button:focus {
   background-position: center;
   width: 95%;
   padding: auto;
-  background-repeat: repeat;
   opacity: 0.13;
 
 
+  right: 0;
+  left: 10;
 
-  background-repeat: repeat;
-
-  padding-bottom: 0 !important;
-  padding-top: 0 !important;
+  
 }
 
 .home-section {

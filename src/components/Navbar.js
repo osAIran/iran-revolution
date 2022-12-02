@@ -42,12 +42,14 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  // if not expanded, non-expanded-navbar
+
   return (
     <Navbar
       expanded={expand}
       fixed="top"
       expand="lg"
-      className={navColour ? "sticky" : "navbar"}
+      className={navColour ? "sticky" : expand ? "navbar" : "navbar-transparent"}
     >
       <Container >
         <Navbar.Brand href="/"  >
@@ -65,7 +67,7 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="/" style={{ padding: 0 }}>
-            <Nav.Item style={{ paddingTop: 12, paddingLeft:12 }} >
+            <Nav.Item style={{ paddingTop: 12, paddingLeft: 12 }} >
               <HashLink smooth to="/petition" className="no-hyperlink"
                 onClick={() => updateExpanded(false)}
 
@@ -97,7 +99,7 @@ function NavBar() {
                 as={Link}
                 to="/art"
                 onClick={() => updateExpanded(false)}
-                style={{ paddingLeft:0, paddingTop:12}}
+                style={{ paddingLeft: 0, paddingTop: 12 }}
               >
                 <MdOutlineTheaterComedy
                   style={{ marginBottom: "2px" }}
