@@ -6,7 +6,11 @@ import pdf from "../../Assets/../Assets/for_future.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+
+import ReactPlayer from "react-player";
+import './style.css'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 
 const resumeLink =
   "https://github.com/lrhm/petition-for-iran/raw/7b7396b98c94cd8d4ea757e052f4547ec01e5aca/src/Assets/for_future.pdf";
@@ -38,6 +42,11 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
+        <Row style={{ justifyContent: "center" }}>
+
+          <ReactPlayer className="videoPlayer" url="https://youtu.be/aJb3uc1D1D8?t=65" />
+
+        </Row>
         <Row style={{ justifyContent: "center", position: "relative" }}>
 
 
