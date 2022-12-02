@@ -1,3 +1,12 @@
+.red {
+    color: #dd4d3c
+}
+
+.red-bold {
+    color: #dd4d3c;
+    font-weight: bold;
+}
+
 .item {
     position: relative;
     width: 100%;
@@ -24,36 +33,35 @@
     transition: opacity 300ms ease-in;
 }
 
-.icon_img{
+.icon_img {
     padding: 1;
     width: 20%;
-    margin:0.2em;
-    
+    margin: 0.2em;
+
 }
 
 @media (max-width: 1200px) {
-    .icon_img{
+    .icon_img {
         width: 50%;
-        margin:0.9em        
-
+        margin: 0.9em
     }
 }
+
 @media (max-width: 767px) {
     .icon_img {
         width: 80%;
-        margin:0.9em        
-        
+        margin: 0.9em
     }
 }
 
 
 
-.bg_image{
+.bg_image {
     background-repeat: repeat;
     opacity: 0.4;
     width: 50%;
-    
-    
+
+
 }
 
 .purple-revolution-title {
@@ -61,6 +69,5 @@
     font-size: 2.2em;
     display: inline;
     /* text-align: start; */
-    
-  }
-  
+
+}
