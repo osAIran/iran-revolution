@@ -27,19 +27,40 @@
 .icon_img{
     padding: 1;
     width: 20%;
+    margin:0.2em;
     
 }
 
+@media (max-width: 1200px) {
+    .icon_img{
+        width: 50%;
+        margin:0.9em        
+
+    }
+}
 @media (max-width: 767px) {
     .icon_img {
         width: 80%;
-        padding:0.6em        
+        margin:0.9em        
         
     }
 }
+
+
+
 .bg_image{
     background-repeat: repeat;
     opacity: 0.4;
     width: 50%;
     
+    
 }
+
+.purple-revolution-title {
+    color: var(--imp-text-color) !important;
+    font-size: 2.2em;
+    display: inline;
+    /* text-align: start; */
+    
+  }
+  

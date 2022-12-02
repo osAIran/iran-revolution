@@ -40,27 +40,32 @@ export default function About() {
   }, [images]);
 
   return (
-    
+
     <div style={{ position: "relative" }}>
-      
-     
+
+
       <Container fluid id="about">
 
         <Container>
 
 
-          <Row>
+
+          <Row md={8}>
 
 
-            <Col md={8} className="home-about-description">
-              <h1 style={{ fontSize: "2.7em", justifyContent: "center" }}>
+
+            <Col className="home-about-description">
+
+
+              <div style={{ justifyContent: "end" }}>
                 <img className="icon_img"
-                  src="https://ik.imagekit.io/hcdblkujo/icon.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669948091459"
+                  src="https://ik.imagekit.io/hcdblkujo/icon.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669948091459">
 
+                </img>
 
-                />
-                <span className="purple"> We are Iran's Resistance</span>
-              </h1>
+                <div className="purple-revolution-title"> We are Iran's Resistance</div>
+              </div>
+
               <p className="home-about-body">
                 {/* In the world's first <span className="purple"> feminist revolution</span> in history.
               <br />
