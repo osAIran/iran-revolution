@@ -51,7 +51,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src="assets/revolution.png" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 2 }}>Women Life Freedom</b>
+          <img src="assets/icon.webp" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 4 ,  paddingRight:0}}>Women Life Freedom</b>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -64,7 +64,7 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto" defaultActiveKey="#home" style={{padding:0}}>
             <Nav.Item style={{ paddingTop: 12 }} >
               <HashLink smooth to="/petition" className="no-hyperlink"
                 onClick={() => updateExpanded(false)}
@@ -97,6 +97,7 @@ function NavBar() {
                 as={Link}
                 to="/art"
                 onClick={() => updateExpanded(false)}
+                style={{padding:0}}
               >
                 <MdOutlineTheaterComedy
                   style={{ marginBottom: "2px" }}
@@ -109,6 +110,8 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/lyrics"
+                style={{padding:0}}
+
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> For
@@ -120,6 +123,8 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/students-in-chains"
+                style={{padding:0}}
+
                 onClick={() => updateExpanded(false)}
               >
 

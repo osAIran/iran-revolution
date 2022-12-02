@@ -1,10 +1,10 @@
 .image {
-    max-width: 300px;   
+    max-width: 300px;
     max-height: 500px;
-    width:auto;
-    height:auto;
+    width: auto;
+    height: auto;
 
-   
+
 }
 
 
@@ -19,6 +19,7 @@
     font-size: 1.8em;
 
 }
+
 @media screen and (max-width: 600px) {
     .title {
         font-size: 1.5em;
@@ -28,4 +29,44 @@
         font-size: 1.3em;
     }
 }
-    
+
+
+
+@keyframes slideAnimation {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+.looper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.looper__innerList {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.looper__listInstance {
+    display: flex;
+    height: max-content;
+
+    animation: slideAnimation linear infinite;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+    animation: slideAnimation linear infinite;
+}
+
+.looper__listInstance {
+    display: flex;
+    height: max-content;
+
+    animation: none;
+}
