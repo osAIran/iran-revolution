@@ -57,13 +57,13 @@ export default function About() {
             <Col className="home-about-description">
 
 
-              <div style={{ justifyContent: "end" }}>
+              <div style={{ justifyContent: "center" }}>
                 <img className="icon_img"
                   src="https://ik.imagekit.io/hcdblkujo/icon.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669948091459">
 
                 </img>
 
-                <div className="purple-revolution-title"> We are Iran's Resistance</div>
+                <div className="purple-revolution-title"> We are People of Iran</div>
               </div>
 
               <p className="home-about-body">
