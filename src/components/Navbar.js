@@ -30,7 +30,7 @@ import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  const [navColour, updateNavbar] = useState(true);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -65,7 +65,7 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="/" style={{ padding: 0 }}>
-            <Nav.Item style={{ paddingTop: 12 }} >
+            <Nav.Item style={{ paddingTop: 12, paddingLeft:12 }} >
               <HashLink smooth to="/petition" className="no-hyperlink"
                 onClick={() => updateExpanded(false)}
 
@@ -97,7 +97,7 @@ function NavBar() {
                 as={Link}
                 to="/art"
                 onClick={() => updateExpanded(false)}
-                style={{ padding: 0 }}
+                style={{ paddingLeft:0, paddingTop:12}}
               >
                 <MdOutlineTheaterComedy
                   style={{ marginBottom: "2px" }}
@@ -123,7 +123,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/students-in-chains"
-                style={{ padding: 10 }}
+                style={{ padding: 0 }}
 
                 onClick={() => updateExpanded(false)}
               >
