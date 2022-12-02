@@ -53,8 +53,8 @@ function App() {
         </Routes>
 
         <Footer />
-        <div style={{ justifyContent: "center" }}>
-          <img className="bg-repeat" src="assets/15.webp" style={{ position: "absolute", left:50, bottom: 0 }}>
+        <div>
+          <img className="bg-repeat" src="assets/15.webp" style={{ position: "absolute", left: 50, bottom: 0 }}>
           </img>
         </div>
         <Particle />
