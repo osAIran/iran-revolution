@@ -30,10 +30,10 @@ import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(true);
+  const [navColour, updateNavbar] = useState(false);
 
   function scrollHandler() {
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 30) {
       updateNavbar(true);
     } else {
       updateNavbar(false);
