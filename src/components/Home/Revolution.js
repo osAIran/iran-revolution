@@ -42,9 +42,9 @@ export default function About() {
   return (
     
     <div style={{ position: "relative" }}>
+      
      
       <Container fluid id="about">
-      <Particle />
 
         <Container>
 

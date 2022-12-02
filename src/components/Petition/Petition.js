@@ -100,7 +100,6 @@ export default function () {
             
         </div>
             <Container fluid className="home-section" id="home"  >
-            <Particle />
 
                 <Container className="home-content">
 
