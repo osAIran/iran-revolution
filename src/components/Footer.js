@@ -14,7 +14,7 @@ function Footer() {
     <Container fluid className="footer" style={{ background: "transparent" }}>
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by <span className="purple-bold">Mahsa Amini's</span> Army</h3>
+          <h3>Designed and Developed by The Army of <span className="purple-bold">Mahsa Amini</span></h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} WLF</h3>

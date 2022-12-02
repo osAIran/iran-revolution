@@ -79,7 +79,7 @@ export default function About() {
                 <br />
 
 
-                We are fighting for <b className="purple">children</b> and future. We are fighting against child murder, marriage, labor and abuse.
+                We are fighting for <b className="purple">children and future</b>. We are fighting against <span className="red">child murder, marriage,</span> labor and abuse.
 
 
                 {/* <b className="purple-bold"> 13</b> is the minimum age of marriage for girls under islamic law and we will not let it stay for long. */}
