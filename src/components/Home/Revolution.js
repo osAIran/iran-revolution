@@ -59,7 +59,7 @@ export default function About() {
 
 
                 />
-                <span className="purple"> Iran's 2022 Revolution </span>
+                <span className="purple"> We are Iran's Resistance</span>
               </h1>
               <p className="home-about-body">
                 {/* In the world's first <span className="purple"> feminist revolution</span> in history.

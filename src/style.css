@@ -111,7 +111,7 @@ button:focus {
   padding: 0.3rem 1rem !important;
   font-size: 1.2rem !important;
   min-height: 9%;
-  backdrop-filter: blur(3px) !important;
+  backdrop-filter: blur(1px) !important;
 
 }
 
@@ -175,7 +175,13 @@ button:focus {
     background-color: #1b1a2ea9 !important;
 
   }
-  
+  .navbar-transparent {
+    padding: 1rem 1rem !important;
+    font-size: 1.4rem !important;
+    backdrop-filter: blur(3px);
+    background-color: #1b1a2ea9 !important;
+
+  }
   
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -315,11 +321,11 @@ button:focus {
   background-position: center;
   width: 95%;
   padding: auto;
-  opacity: 0.13;
+  opacity: 0.3;
 
 
   right: 0;
-  left: 10;
+  left: 0;
 
   
 }
@@ -735,6 +741,9 @@ button:focus {
   padding-bottom: 30px;
 }
 
+.title{
+  color:white;
+}
 
 
 .resume .resume-item {

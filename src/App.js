@@ -53,11 +53,12 @@ function App() {
         </Routes>
 
         <Footer />
+        <Particle />
+
         <div>
           <img className="bg-repeat" src="assets/15.webp" style={{ position: "absolute", left: 20, bottom: -20 }}>
           </img>
         </div>
-        <Particle />
 
       </div>
     </Router>
