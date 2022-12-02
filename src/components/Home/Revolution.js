@@ -54,7 +54,7 @@ export default function About() {
             <Col md={8} className="home-about-description">
               <h1 style={{ fontSize: "2.7em", justifyContent: "center" }}>
                 <img className="icon_img"
-                  src="https://ik.imagekit.io/hcdblkujo/meta.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669941978435"
+                  src="https://ik.imagekit.io/hcdblkujo/icon.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669948091459"
 
 
                 />
