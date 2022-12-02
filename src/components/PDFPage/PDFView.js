@@ -7,6 +7,8 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
+
+import YouTubePlayer from "react-player/lib/players/YouTube";
 import ReactPlayer from "react-player";
 import './style.css'
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
@@ -42,9 +44,11 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center" }}>
+        <Row style={{ position: "relative", justifyContent: "center" }}>
 
-          <ReactPlayer className="videoPlayer" url="https://youtu.be/aJb3uc1D1D8?t=65" />
+
+          <ReactPlayer className="video-player"  url="https://youtu.be/aJb3uc1D1D8?t=65" />
+
 
         </Row>
         <Row style={{ justifyContent: "center", position: "relative" }}>

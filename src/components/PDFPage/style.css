@@ -1,5 +1,18 @@
-.videoPlayer {
+.video-player {
+    width: "80%" !important;
+    height: auto !important;
+    aspect-ratio: 16/9 !important;
 
-    width: 90%;
-    height: auto;
+
+
+}
+
+@media (max-width: 768) {
+    .video-player {
+
+        width: "100%" !important;
+        height: auto !important;
+        aspect-ratio: 16/9 !important;
+    }
+
 }

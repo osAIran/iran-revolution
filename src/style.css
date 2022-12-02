@@ -92,6 +92,7 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(17, 27, 21, 0.171) !important;
   backdrop-filter: blur(15px) !important;
+  
 }
 
 .navbar {
@@ -99,6 +100,8 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  min-height: 9%;
+
 }
 
 .navbar-toggler {
