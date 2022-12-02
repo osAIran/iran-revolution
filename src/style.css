@@ -10,9 +10,6 @@ html {
   --imp-text-color: #c770f0;
 }
 
-.red {
-  color: #dd4d3c
-}
 
 .purple {
   color: var(--imp-text-color) !important;
@@ -416,7 +413,7 @@ button:focus {
 .home-about-description {
   font-size: 1.3em !important;
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 60px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
