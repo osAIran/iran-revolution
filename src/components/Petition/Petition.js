@@ -96,7 +96,9 @@ export default function () {
     return (
         <div>
 
-
+        <div style={{position:"absolute"}}>
+            
+        </div>
             <Container fluid className="home-section" id="home"  >
             <Particle />
 

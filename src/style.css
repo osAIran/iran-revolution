@@ -271,12 +271,29 @@ button:focus {
   padding-top: 80px !important;
 }
 
+.bg-repeat {
+  position: absolute;
+  z-index: 0;
+  background-image: var(--image-gradient), url(Assets/bg.webp);
+  background-position:  center ;
+  width: 96%;
+  opacity: 0.13;
+  
+  
+
+  background-repeat: repeat;
+
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
 .home-section {
   position: relative;
   z-index: 0;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: repeat;
+  background-image: var(--image-gradient);
+  background-position:  center bottom;
+
+  background-repeat: repeat-x;
 
   padding-bottom: 0 !important;
   padding-top: 0 !important;

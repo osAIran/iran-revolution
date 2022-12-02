@@ -32,10 +32,12 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
-
+  
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
+      
+        <Navbar />.
         <ScrollToTop />
+      
         <Routes>
           <Route path="/" element={<Revolution />} />
           <Route path="/petition" element={<Home />} />
@@ -44,11 +46,15 @@ function App() {
           <Route path="/about" element={<Revolution />} />
           <Route path="/lyrics" element={<Lyrics />} />
           <Route path="/art" element={<Gallery />} />
-          <Route path="/students-in-chains" element={<Gallery  category={"chain"} />} />
+          <Route path="/students-in-chains" element={<Gallery category={"chain"} />} />
 
-          <Route path="*" element={<Navigate to="/"/>} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+
         <Footer />
+        <img className="bg-repeat" src="assets/15.webp" style={{ position: "absolute", left: 0, bottom: 0 }}>
+        </img>  
+
       </div>
     </Router>
   );
