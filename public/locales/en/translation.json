@@ -1,21 +1,27 @@
 {
   "We are People of Iran": "We are People of Iran",
-  "We are fighting for <1> gender equality, freedom of speech, and freedom of religion": {
-    "</1>": "We are fighting for <1> gender equality, freedom of speech, and freedom of religion.</1>"
-  },
-  "We are fighting against systematic oppression of <1>minorities and women</1>": "We are fighting against systematic oppression of <1>minorities and women</1>.",
-  "We are fighting for <1>children and future</1>": {
-    " We are fighting against <3>child murder, marriage</3><4>, labor and abuse": {
-      "</4>": "We are fighting for <1>children and future</1>. We are fighting against <3>child murder, marriage</3><4>, labor and abuse.</4>"
-    }
-  },
-  "We are fighting for <1>justice</1> for crimes against humanity and we will not stop until the trial of <3>Ali Khamenei</3> is held in <5>Iran</5>": "We are fighting for <1>justice</1> for crimes against humanity and we will not stop until the trial of <3>Ali Khamenei</3> is held in <5>Iran</5>.",
-  "We will not stop until we see <1>Iran</1> without islamic republic": {
-    " <3>We will not compromise</3>": "We will not stop until we see <1>Iran</1> without islamic republic. <3>We will not compromise</3>."
-  },
+  "We are fighting for": "We are fighting for",
+  "gender equality, freedom speech, and freedom of religion": "gender equality, freedom speech, and freedom of religion",
+  "END_FIGHT": "",
+  "We are fighting against systematic oppression of": "We are fighting against systematic oppression of",
+  "minorities and women": "minorities and women",
+  "children and future": "children and future.",
+  "We are fighting against": "We are fighting against",
+  "child murder, marriage": "child murder, marriage ",
+  "labor and abuse": "labor and abuse.",
+  "CHILDREN_FA": "",
+  "justice": "justice",
+  "for crimes against humanity and we will not stop until the trial of ": "for crimes against humanity and we will not stop until the trial of ",
+  " Ali Khamenei": "Ali Khamenei",
+  "is held in": "is held in",
+  "Iran": "Iran",
+  "end_justice": "",
+  "We will not stop until we see": "We will not stop until we see",
+  "without islamic republic": "without islamic republic",
+  "We will not compromise": "We will not compromise",
   "We Shall Prevail": "We Shall Prevail",
   "Women Life Freedom": "Women Life Freedom",
-  "Human Life Liberty": "Human Life Liberty",
+  "Human Life Liberty": "Peace Hope Happiness",
   "  Please sign  ": "  Please sign  ",
   "Our Petition": "Our Petition",
   "Stand with us": "Stand with us",
@@ -23,5 +29,7 @@
   "Petition": "Petition",
   "Revolution": "Revolution",
   "Artwork": "Artwork",
+  "For": "For",
+  " Our Loved ones": " Our Loved ones",
   "ISL": "ISL"
 }

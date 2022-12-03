@@ -1,7 +1,7 @@
 
 
 module.exports = {
-    createOldCatalogs: false, // save previous translation catalogs to the \_old folder
+    createOldCatalogs: true, // save previous translation catalogs to the \_old folder
 
     lexers: {
         js: ['JsxLexer'], // we're writing jsx inside .js files
@@ -11,6 +11,13 @@ module.exports = {
     locales: ['en', 'fa'],
     // An array of the locales in your applications
     identatin: 2,
+
+    // keepOld: true,
+
+    removeUnusedKeys: false,
+
+    defaultNamespace: 'translation',
+    skipDefaultValues: false,
 
     namespaceSeparator: '.',
     // Namespace separator used in your translation keys

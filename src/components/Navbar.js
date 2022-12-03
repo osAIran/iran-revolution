@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -35,6 +35,17 @@ function NavBar() {
 
   const { t, i18n } = useTranslation();
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  }
+
+  const currentLanguage = i18n.language;
+
+  useEffect(() => {
+    console.log(currentLanguage);
+    changeLanguage("en")
+  }, [currentLanguage]);
+
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -55,11 +66,16 @@ function NavBar() {
       expanded={expand}
       fixed="top"
       expand="lg"
+
       className={navColour ? "sticky" : expand ? "navbar" : "navbar-transparent"}
     >
       <Container >
         <Navbar.Brand href="/"  >
-          <img src="https://ik.imagekit.io/hcdblkujo/favi_icon_200x200.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669939942440" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 4, paddingRight: 0 }}>Women Life Freedom</b>
+          <img src="https://ik.imagekit.io/hcdblkujo/favi_icon_200x200.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669939942440" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 40, paddingRight: 0 }}>
+            <Trans>
+              Women Life Freedom
+            </Trans>
+          </b>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -72,7 +88,7 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="/" style={{ padding: 0 }}>
+          <Nav className="me-auto" defaultActiveKey="/" style={{ padding: 0 }}>
             <Nav.Item style={{ paddingTop: 12, paddingLeft: 12 }} >
               <HashLink smooth to="/petition" className="no-hyperlink"
                 onClick={() => updateExpanded(false)}
@@ -110,7 +126,7 @@ function NavBar() {
                 <MdOutlineTheaterComedy
                   style={{ marginBottom: "2px" }}
                 />{" "}
-               <Trans>Artwork</Trans> 
+                <Trans>Artwork</Trans>
               </Nav.Link>
             </Nav.Item>
 
@@ -122,7 +138,7 @@ function NavBar() {
 
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> For
+                <CgFileDocument style={{ marginBottom: "2px" }} /> <Trans>For</Trans>
               </Nav.Link>
             </Nav.Item>
 
@@ -137,7 +153,7 @@ function NavBar() {
               >
 
                 <div className="purple-navbar">
-                  <AiTwotoneHeart className="purple-navbar" style={{ marginBottom: "2px", margin: 0 }} />  Our Loved ones </div>
+                  <AiTwotoneHeart className="purple-navbar" style={{ marginBottom: "2px", margin: 0 }} /> <Trans> Our Loved ones</Trans></div>
               </Nav.Link>
             </Nav.Item>
 

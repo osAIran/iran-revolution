@@ -72,39 +72,34 @@ export default function About() {
 
               <p className="home-about-body">
 
-                <Trans>
-
-                  We are fighting for <b className="purple"> gender equality, freedom of speech, and freedom of religion.</b>
-
-                </Trans>
-                <br />
-                <br />
-
-                <Trans>
-                  We are fighting against systematic oppression of <b className="purple">minorities and women</b>.
-                </Trans>
-                <br />
-                <br />
 
 
-                <Trans>
-                  We are fighting for <b className="purple">children and future</b>. We are fighting against <span className="red-bold">child murder, marriage</span><span className="red">, labor and abuse.</span>
-                </Trans>
-
-                {/* <b className="purple-bold"> 13</b> is the minimum age of marriage for girls under islamic law and we will not let it stay for long. */}
+                {t("We are fighting for")}  <b className="purple"> {t("gender equality, freedom speech, and freedom of religion")}</b> {t("END_FIGHT")}
 
 
                 <br />
                 <br />
 
-                <Trans>
-                  We are fighting for <b className="purple">justice</b> for crimes against humanity and we will not stop until the trial of <b className="red">Ali Khamenei</b> is held in <b className="purple">Iran</b>.
-                </Trans>
+
+                {t("We are fighting against systematic oppression of")} <b className="purple">{t("minorities and women")}</b> {t("END_FIGHT")}
+
                 <br />
                 <br />
-                <Trans>
-                  We will not stop until we see <b className="purple">Iran</b> without islamic republic. <b className="purple">We will not compromise</b>.
-                </Trans>
+
+
+
+
+                {t("We are fighting for")}   <b className="purple"> {t("children and future")} </b> {t("END_FIGHT")} {t("We are fighting against")} <span className="red-bold">{t("child murder, marriage")}</span><span className="red">{t("labor and abuse")} </span> <span className="purple-bold">{t("CHILDREN_FA")}</span> {t("END_FIGHT")}
+
+
+                <br />
+                <br />
+
+                {t("We are fighting for")} <b className="purple">{t("justice")}</b> {t("for crimes against humanity and we will not stop until the trial of ")}<b className="red"> {t(" Ali Khamenei")}</b> {t("is held in")}  <b className="purple"> {t("Iran")}</b> {t("end_justice")}
+
+                <br />
+                <br />
+                {t("We will not stop until we see")} <b className="purple">{t("Iran")}</b> {t("without islamic republic")} <b className="purple">{t("We will not compromise")}</b>
                 <br />
                 <br />
 
@@ -112,7 +107,6 @@ export default function About() {
 
 
                 <b className="purple-bold"> <Trans>We Shall Prevail</Trans></b>
-                <br />
                 <br />
 
                 <b className="purple-bold"><Trans>Women Life Freedom</Trans></b>
