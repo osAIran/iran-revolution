@@ -72,18 +72,24 @@ export default function About() {
 
               <p className="home-about-body">
 
+                <Trans>
 
-                We are fighting for <b className="purple"> gender equality, freedom of speech, and freedom of religion.</b>
+                  We are fighting for <b className="purple"> gender equality, freedom of speech, and freedom of religion.</b>
+
+                </Trans>
                 <br />
                 <br />
 
-                We are fighting against systematic oppression of <b className="purple">minorities and women</b>.
+                <Trans>
+                  We are fighting against systematic oppression of <b className="purple">minorities and women</b>.
+                </Trans>
                 <br />
                 <br />
 
 
-                We are fighting for <b className="purple">children and future</b>. We are fighting against <span className="red-bold">child murder, marriage</span><span className="red">, labor and abuse.</span>
-
+                <Trans>
+                  We are fighting for <b className="purple">children and future</b>. We are fighting against <span className="red-bold">child murder, marriage</span><span className="red">, labor and abuse.</span>
+                </Trans>
 
                 {/* <b className="purple-bold"> 13</b> is the minimum age of marriage for girls under islamic law and we will not let it stay for long. */}
 
@@ -91,25 +97,27 @@ export default function About() {
                 <br />
                 <br />
 
-
-                We are fighting for <b className="purple">justice</b> for crimes against humanity and we will not stop until the trial of <b className="red">Ali Khamenei</b> is held in <b className="purple">Iran</b>.
+                <Trans>
+                  We are fighting for <b className="purple">justice</b> for crimes against humanity and we will not stop until the trial of <b className="red">Ali Khamenei</b> is held in <b className="purple">Iran</b>.
+                </Trans>
+                <br />
+                <br />
+                <Trans>
+                  We will not stop until we see <b className="purple">Iran</b> without islamic republic. <b className="purple">We will not compromise</b>.
+                </Trans>
                 <br />
                 <br />
 
-                We will not stop until we see <b className="purple">Iran</b> without islamic republic. <b className="purple">We will not compromise</b>.
-                <br />
-                <br />
 
 
 
+                <b className="purple-bold"> <Trans>We Shall Prevail</Trans></b>
+                <br />
+                <br />
 
-                <b className="purple-bold">We Shall Prevail</b>
+                <b className="purple-bold"><Trans>Women Life Freedom</Trans></b>
                 <br />
-                <br />
-                <b className="purple-bold">Women Life Freedom</b>
-                <br />
-                <b className="purple-bold">Human Life Liberty</b>
-
+                <b className="purple-bold"><Trans>Human Life Liberty</Trans></b>
 
 
 
@@ -118,14 +126,11 @@ export default function About() {
 
             <Col md={4} className="myAvtar">
               {/* <img src="assets/20.jpeg" className="img-fuild" width={400} /> */}
-              <div className="title"> Please sign    <HashLink className="petition-bold" smooth to="/petition"
+              <div className="title">
+                <Trans>  Please sign  </Trans>  <HashLink className="petition-bold" smooth to="/petition"                >
+                  <MdHowToVote style={{ marginBottom: "2px" }} /> <Trans>Our Petition</Trans>
 
-
-
-              >
-                <MdHowToVote style={{ marginBottom: "2px" }} /> Our Petition
-
-              </HashLink> <div className="title-bold">Stand with us</div>
+                </HashLink> <div className="title-bold"><Trans>Stand with us</Trans></div>
               </div>
               <div className="img-fluid" style={{ paddingTop: 5 }}>
                 <CSSTransition nodeRef={nodeRef} in={inProp} timeout={2000}>
@@ -140,7 +145,6 @@ export default function About() {
               <br />
               <br />
 
-
             </Col>
 
           </Row>
@@ -150,14 +154,18 @@ export default function About() {
             <Col md={12} className="home-about-social">
               <h1></h1>
               <p>
-                <a href="https://www.iranianscholarsforliberty.com/" className="purple">Iranian Scholars for Liberty</a> is a group of Iranian scholars who are fighting for the freedom of Iran.
+                <Trans>
+
+                  <a href="https://www.iranianscholarsforliberty.com/" className="purple">Iranian Scholars for Liberty</a> is a group of Iranian scholars who are fighting for the freedom of Iran.
+                </Trans>
+
               </p>
 
 
             </Col>
           </Row>
         </Container>
-      </Container ></div>
+      </Container ></div >
   );
 }
 

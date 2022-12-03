@@ -11,17 +11,21 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer" style={{ background: "transparent" }}>
+    <Container fluid className="footer" style={{ background: "transparent" , justifyContent:"space-evenly"}}>
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by The Army of <span className="purple-bold">Mahsa Amini</span></h3>
+          <h3>We are <span className="purple">Revolutionary People. United</span> all around the globe.</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} WLF</h3>
         </Col>
-        <Col md="4" className="footer-body">
-          {/* <ul className="footer-icons"> */}
-          {/* <li className="social-icons">
+
+        <Col md="4" className="footer-copywright">
+          <h3><a href="https://github.com/jinaamini/iran-revolution" className="purple">Open Source and Openness</a></h3>
+        </Col>
+        {/* <Col md="4" className="footer-body"> */}
+        {/* <ul className="footer-icons"> */}
+        {/* <li className="social-icons">
               <a
                 href="https://github.com/soumyajit4419"
                 style={{ color: "white" }}
@@ -62,7 +66,7 @@ function Footer() {
               </a>
             </li>
           </ul> */}
-        </Col>
+        {/* </Col> */}
       </Row>
     </Container>
   );
