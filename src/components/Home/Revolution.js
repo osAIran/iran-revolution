@@ -23,7 +23,12 @@ import { CSSTransition } from 'react-transition-group';
 import GetImages from "../Gallery/Data";
 import "./Revolution.css";
 
+import { useTranslation } from 'react-i18next';
+import { Trans } from "react-i18next";
+
 export default function About() {
+
+  const { t } = useTranslation();
 
   const images = GetImages('all');
 
@@ -57,17 +62,17 @@ export default function About() {
             <Col className="home-about-description">
 
 
-              <div  style={{padding:0}}>
+              <div style={{ padding: 0 }}>
                 <img className="icon_img"
                   src="https://ik.imagekit.io/hcdblkujo/icon.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669948091459">
                 </img>
 
-                <div className="purple-revolution-title"> We are People of Iran</div>
+                <div className="purple-revolution-title"><Trans>We are People of Iran</Trans></div>
               </div>
 
               <p className="home-about-body">
-          
-          
+
+
                 We are fighting for <b className="purple"> gender equality, freedom of speech, and freedom of religion.</b>
                 <br />
                 <br />

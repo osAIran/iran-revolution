@@ -27,8 +27,14 @@ import {
   from "react-icons/gi";
 
 import { CgFileDocument } from "react-icons/cg";
+import { useTranslation } from 'react-i18next';
+
+import { Trans } from 'react-i18next';
 
 function NavBar() {
+
+  const { t, i18n } = useTranslation();
+
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -40,9 +46,9 @@ function NavBar() {
     }
   }
 
+
   window.addEventListener("scroll", scrollHandler);
 
-  // if not expanded, non-expanded-navbar
 
   return (
     <Navbar
@@ -72,7 +78,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
 
               >
-                <MdHowToVote style={{ marginBottom: "2px" }} /> Petition
+                <MdHowToVote style={{ marginBottom: "2px" }} /> <Trans>Petition</Trans>
               </HashLink>
             </Nav.Item>
 
@@ -81,7 +87,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
 
               >
-                <GiRevolt style={{ paddingTop: 0 }} /> Revolution
+                <GiRevolt style={{ paddingTop: 0 }} /> <Trans>Revolution</Trans>
               </HashLink>
 
 
@@ -104,7 +110,7 @@ function NavBar() {
                 <MdOutlineTheaterComedy
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Artwork
+               <Trans>Artwork</Trans> 
               </Nav.Link>
             </Nav.Item>
 
@@ -141,7 +147,7 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> ISL
+                <ImBlog style={{ marginBottom: "2px" }} /> <Trans>ISL</Trans>
               </Nav.Link>
             </Nav.Item>
 

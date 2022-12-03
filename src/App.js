@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
@@ -19,6 +19,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Particle from "./components/Particle";
 
+
 function App() {
   const [load, upadateLoad] = useState(true);
 
@@ -32,35 +33,37 @@ function App() {
 
   return (
     <Router>
-      <Preloader load={load} />
+      <Suspense fallback="loading">
+        <Preloader load={load} />
 
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
 
-        <Navbar />.
-        <ScrollToTop />
+          <Navbar />.
+          <ScrollToTop />
 
-        <Routes>
-          <Route path="/" element={<Revolution />} />
-          <Route path="/petition" element={<Home />} />
-          <Route path="/you-can-help-us" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<Revolution />} />
-          <Route path="/lyrics" element={<Lyrics />} />
-          <Route path="/art" element={<Gallery />} />
-          <Route path="/students-in-chains" element={<Gallery category={"chain"} />} />
+          <Routes>
+            <Route path="/" element={<Revolution />} />
+            <Route path="/petition" element={<Home />} />
+            <Route path="/you-can-help-us" element={<Home />} />
+            <Route path="/project" element={<Projects />} />
+            <Route path="/about" element={<Revolution />} />
+            <Route path="/lyrics" element={<Lyrics />} />
+            <Route path="/art" element={<Gallery />} />
+            <Route path="/students-in-chains" element={<Gallery category={"chain"} />} />
 
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
 
-        <Footer />
-        <Particle />
+          <Footer />
+          <Particle />
 
-        <div>
-          <img className="bg-repeat" src="assets/15.webp" style={{ position: "absolute", left: 20, bottom: -20 }}>
-          </img>
+          <div>
+            <img className="bg-repeat" src="assets/15.webp" style={{ position: "absolute", left: 20, bottom: -20 }}>
+            </img>
+          </div>
+
         </div>
-
-      </div>
+      </Suspense>
     </Router>
   );
 }
