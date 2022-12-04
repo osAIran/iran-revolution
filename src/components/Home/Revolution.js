@@ -140,10 +140,15 @@ export default function About({ language }) {
             <Col md={4} className="myAvtar">
               {/* <img src="assets/20.jpeg" className="img-fuild" width={400} /> */}
               <div className="title">
-                {t("Please sign")} <HashLink className="petition-bold" smooth to="/petition"                >
-                  <MdHowToVote style={{ marginBottom: "2px" }} /> {t("Our Petition")}
+                {t("Please sign")}
+                {
+                  // if language is fa, skip petition
+                  isFa ? null : <HashLink className="petition-bold" smooth to="/petition" >
+                    <MdHowToVote style={{ marginBottom: "2px" }} /> {t("Our Petition")}
 
-                </HashLink> <div className="title-bold"> {t("Stand with us")}</div>
+                  </HashLink>
+                }
+                <div className="title-bold"> {t("Stand with us")}</div>
 
                 <div className="purple"> {t("For Azar")}</div>
                 <div className="purple"> {t("END Zahak")}</div>

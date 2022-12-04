@@ -17,6 +17,7 @@ function useAudio(urls) {
     // random from urls
     const random = Math.floor(Math.random() * urls.length);
     setUrlState(urls[random]);
+    setPlaybackStatus("play");
   }
 
   return [
