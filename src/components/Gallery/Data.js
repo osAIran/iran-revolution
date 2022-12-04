@@ -286,7 +286,16 @@ export default function GetImages(category = "all") {
     }
 
     if (category == "fa") {
-        return rev_aazar
+        // return rev_aazar
+        //  rev_azar * importantce + images
+        let importance = 5
+
+        let rev_repeated = []
+        for (let i = 0; i < importance; i++) {
+            rev_repeated = rev_repeated.concat(rev_aazar)
+        }
+
+        return rev_repeated.concat(images).sort(() => Math.random() - 0.5)
     }
 
     return images.sort(() => 0.5 - Math.random());
