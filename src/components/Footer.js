@@ -6,22 +6,34 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
+
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+
+  const { t, i18n } = useTranslation()
+
+  if (i18n.language == 'fa') {
+    year = ""
+  }
+
   return (
-    <Container fluid className="footer" style={{ background: "transparent" , justifyContent:"space-evenly"}}>
+    <Container fluid className="footer" style={{ background: "transparent", justifyContent: "space-evenly" }}>
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>We are <span className="purple">Revolutionary People. United</span> all around the globe.</h3>
+          <h3> {t("We are")} <span className="purple">{t("Revolutionary People, United")}</span> {t("all around the globe")}</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} WLF</h3>
+          <h3> {t("Copyright")} {year.toLocaleString("fa", {
+            useGrouping: false
+
+          })} {t("WLF")}</h3>
         </Col>
 
         <Col md="4" className="footer-copywright">
-          <h3><a href="https://github.com/jinaamini/iran-revolution" className="purple">Open Source and Openness</a></h3>
+          <h3><a href="https://github.com/jinaamini/iran-revolution" className="purple">{t("Open Source and Openness")}</a></h3>
         </Col>
         {/* <Col md="4" className="footer-body"> */}
         {/* <ul className="footer-icons"> */}

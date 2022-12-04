@@ -181,11 +181,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://www.iranianscholarsforliberty.com/"
+                href="https://future.wearemahsaamini.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> <Trans>ISL</Trans>
+                <ImBlog style={{ marginBottom: "2px" }} /> <Trans>Future</Trans>
               </Nav.Link>
             </Nav.Item>
 

@@ -5,9 +5,11 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { useEffect } from "react";
 import './Gallery.css'
 import GetImages from './Data.js'
+import { useTranslation } from "react-i18next";
 
 export default function Gallery({ category = "all" }) {
 
+    let {t} = useTranslation()
     console.log(category)
     const images = GetImages(category)
 
@@ -18,9 +20,9 @@ export default function Gallery({ category = "all" }) {
     const chained_div = (
         <div>
             <Row style={{ justifyContent: "center" }}>
-                <div className="title" style={{color:"white"}}>  <b className="purple">For our +200000 Loved ones </b> </div> 
+                <div className="title" style={{ color: "white" }}>  <b className="purple">{t("For our +200000 Loved ones")}</b> </div>
             </Row>
-           
+
         </div>
     )
 
@@ -29,7 +31,7 @@ export default function Gallery({ category = "all" }) {
 
             <Container>
 
-                { category === "chain" ? chained_div : null}
+                {category === "chain" ? chained_div : null}
 
                 <Row  >
                     {

@@ -2,7 +2,7 @@
 
 module.exports = {
     createOldCatalogs: true, // save previous translation catalogs to the \_old folder
-
+    contextSeparator: '_',
     lexers: {
         js: ['JsxLexer'], // we're writing jsx inside .js files
         default: ['JavascriptLexer'],
@@ -13,6 +13,7 @@ module.exports = {
     identatin: 2,
 
     // keepOld: true,
+    defaultValue: '',
 
     removeUnusedKeys: false,
 

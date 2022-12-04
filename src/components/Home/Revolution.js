@@ -24,7 +24,6 @@ import GetImages from "../Gallery/Data";
 import "./Revolution.css";
 
 import { useTranslation } from 'react-i18next';
-import { Trans } from "react-i18next";
 
 export default function About({ language }) {
 
@@ -82,11 +81,11 @@ export default function About({ language }) {
 
 
               <div >
-                <img className="icon_img"  style={{ padding: 0, justifyContent: "center" }}
+                <img className="icon_img" style={{ padding: 0, justifyContent: "center" }}
                   src="https://ik.imagekit.io/hcdblkujo/icon.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669948091459">
                 </img>
 
-                <div className="purple-revolution-title"><Trans>We are People of Iran</Trans></div>
+                <div className="purple-revolution-title"> {t("We are People of Iran")}</div>
               </div>
 
               <p className="main-content">
@@ -125,12 +124,12 @@ export default function About({ language }) {
 
 
 
-                <b className="purple-bold"> <Trans>We Shall Prevail</Trans></b>
+                <b className="purple-bold">  {t("We Shall Prevail")}</b>
                 <br />
 
-                <b className="purple-bold"><Trans>Women Life Freedom</Trans></b>
+                <b className="purple-bold"> {t("Women Life Freedom")}</b>
                 <br />
-                <b className="purple-bold"><Trans>Human Life Liberty</Trans></b>
+                <b className="purple-bold"> {t("Human Life Liberty")}</b>
 
 
 
@@ -140,10 +139,10 @@ export default function About({ language }) {
             <Col md={4} className="myAvtar">
               {/* <img src="assets/20.jpeg" className="img-fuild" width={400} /> */}
               <div className="title">
-                <Trans>  Please sign  </Trans>  <HashLink className="petition-bold" smooth to="/petition"                >
-                  <MdHowToVote style={{ marginBottom: "2px" }} /> <Trans>Our Petition</Trans>
+                {t("Please sign")} <HashLink className="petition-bold" smooth to="/petition"                >
+                  <MdHowToVote style={{ marginBottom: "2px" }} /> {t("Our Petition")}
 
-                </HashLink> <div className="title-bold"><Trans>Stand with us</Trans></div>
+                </HashLink> <div className="title-bold"> {t("Stand with us")}</div>
               </div>
               <div className="img-fluid" style={{ paddingTop: 5 }}>
                 <CSSTransition nodeRef={nodeRef} in={inProp} timeout={2000}>
@@ -165,12 +164,9 @@ export default function About({ language }) {
 
           <Row>
             <Col md={12} className="home-about-social">
-              <h1></h1>
               <p>
-                <Trans>
 
-                  <a href="https://www.iranianscholarsforliberty.com/" className="purple">Iranian Scholars for Liberty</a> is a group of Iranian scholars who are fighting for the freedom of Iran.
-                </Trans>
+                <a href="https://www.iranianscholarsforliberty.com/" className="purple">{t("Iranian Scholars for Liberty")}</a> {t("is a group of Iranian scholars who are fighting for the freedom of Iran")}
 
               </p>
 
