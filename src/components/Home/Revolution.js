@@ -144,6 +144,10 @@ export default function About({ language }) {
                   <MdHowToVote style={{ marginBottom: "2px" }} /> {t("Our Petition")}
 
                 </HashLink> <div className="title-bold"> {t("Stand with us")}</div>
+
+                <div className="purple"> {t("For Azar")}</div>
+                <div className="purple"> {t("END Zahak")}</div>
+
               </div>
               <div className="img-fluid" style={{ paddingTop: 5 }}>
                 <CSSTransition nodeRef={nodeRef} in={inProp} timeout={2000}>
