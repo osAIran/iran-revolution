@@ -26,9 +26,9 @@ import "./Revolution.css";
 import { useTranslation } from 'react-i18next';
 import { Trans } from "react-i18next";
 
-export default function About() {
+export default function About({ language }) {
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const images = GetImages('all');
 
@@ -36,6 +36,25 @@ export default function About() {
 
   const [inProp, setInProp] = useState(false);
   const nodeRef = useRef(null);
+
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  }
+
+  const currentLanguage = i18n.language;
+
+  const isFa = currentLanguage === "fa";
+
+  useEffect(() => {
+    if (currentLanguage != language) {
+      changeLanguage(language)
+    }
+    console.log(currentLanguage);
+
+  }, [language]);
+
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,18 +78,18 @@ export default function About() {
 
 
 
-            <Col className="home-about-description">
+            <Col className="main-title">
 
 
-              <div style={{ padding: 0 }}>
-                <img className="icon_img"
+              <div >
+                <img className="icon_img"  style={{ padding: 0, justifyContent: "center" }}
                   src="https://ik.imagekit.io/hcdblkujo/icon.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669948091459">
                 </img>
 
                 <div className="purple-revolution-title"><Trans>We are People of Iran</Trans></div>
               </div>
 
-              <p className="home-about-body">
+              <p className="main-content">
 
 
 

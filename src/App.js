@@ -43,6 +43,9 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Revolution />} />
+            <Route path="/fa" element={<Revolution language="fa" />} />
+            <Route path="/en" element={<Revolution language="en" />} />
+
             <Route path="/petition" element={<Home />} />
             <Route path="/you-can-help-us" element={<Home />} />
             <Route path="/project" element={<Projects />} />

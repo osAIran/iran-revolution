@@ -26,6 +26,11 @@ import {
 }
   from "react-icons/gi";
 
+
+
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+
 import { CgFileDocument } from "react-icons/cg";
 import { useTranslation } from 'react-i18next';
 
@@ -41,10 +46,10 @@ function NavBar() {
 
   const currentLanguage = i18n.language;
 
-  useEffect(() => {
-    console.log(currentLanguage);
-    changeLanguage("en")
-  }, [currentLanguage]);
+  // useEffect(() => {
+  //   console.log(currentLanguage);
+  //   changeLanguage("fa")
+  // }, [currentLanguage]);
 
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -56,6 +61,9 @@ function NavBar() {
       updateNavbar(false);
     }
   }
+  const options = [
+    'English', 'فارسی'
+  ]
 
 
   window.addEventListener("scroll", scrollHandler);
@@ -70,7 +78,7 @@ function NavBar() {
       className={navColour ? "sticky" : expand ? "navbar" : "navbar-transparent"}
     >
       <Container >
-        <Navbar.Brand href="/"  >
+        <Navbar.Brand href="/" className="nav-brand" >
           <img src="https://ik.imagekit.io/hcdblkujo/favi_icon_200x200.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669939942440" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 40, paddingRight: 0 }}>
             <Trans>
               Women Life Freedom
@@ -83,12 +91,26 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
+
+
+
           <span></span>
           <span></span>
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
+
           <Nav className="me-auto" defaultActiveKey="/" style={{ padding: 0 }}>
+
+          {/* <Nav.Item style={{ paddingTop: 12, paddingLeft: 12 }} >
+              <HashLink smooth to="/petition" className="no-hyperlink"
+                onClick={() => updateExpanded(false)}
+
+              >
+                <MdHowToVote style={{ marginBottom: "2px" }} /> EN | FA
+              </HashLink>
+            </Nav.Item> */}
+
             <Nav.Item style={{ paddingTop: 12, paddingLeft: 12 }} >
               <HashLink smooth to="/petition" className="no-hyperlink"
                 onClick={() => updateExpanded(false)}
