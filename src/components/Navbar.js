@@ -35,6 +35,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { useTranslation } from 'react-i18next';
 
 import { Trans } from 'react-i18next';
+import AudioPlayer from "./Audio/AudioPlayer";
 
 function NavBar() {
 
@@ -85,6 +86,7 @@ function NavBar() {
             </Trans>
           </b>
         </Navbar.Brand>
+        <AudioPlayer url="assets/music/Barpakhiz.mp3" />
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -102,7 +104,7 @@ function NavBar() {
 
           <Nav className="me-auto" defaultActiveKey="/" style={{ padding: 0 }}>
 
-          {/* <Nav.Item style={{ paddingTop: 12, paddingLeft: 12 }} >
+            {/* <Nav.Item style={{ paddingTop: 12, paddingLeft: 12 }} >
               <HashLink smooth to="/petition" className="no-hyperlink"
                 onClick={() => updateExpanded(false)}
 
