@@ -29,7 +29,8 @@ export default function About({ language }) {
 
   const { t, i18n } = useTranslation();
 
-  const images = GetImages('all');
+  const category = 'fa' == language || i18n.language == 'fa' ? 'fa' : 'all'
+  const images = GetImages(category);
 
   const [image, setImage] = useState(images[0]);
 
