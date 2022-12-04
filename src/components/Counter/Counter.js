@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Counter.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import { useTranslation } from 'react-i18next';
 
 const Counter = ({ signed, qouta }) => {
 
     const [counter, setCounter] = useState(0);
     const [animationLikes, setAnimationLikes] = useState('initial');
 
-    // if (counter !== signed) {
+    const { t, i18n } = useTranslation();
 
     // calculate dutration of counter
     const duration = 1;
@@ -55,9 +56,9 @@ const Counter = ({ signed, qouta }) => {
 
     return (
 
-        <div className='Grid' style={{padding:10}}>
+        <div className='Grid' style={{ padding: 10 }}>
             <div className='Signed' >
-                <b className='purple'>{signed.toLocaleString()}</b> have signed. Let's go to <b className='purple'>{qouta.toLocaleString()}!</b>
+                <b className='purple'>{signed.toLocaleString(i18n.language)}</b> {t("have signed")}
             </div>
         </div>
     );
