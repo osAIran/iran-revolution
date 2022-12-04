@@ -114,7 +114,7 @@ export default function About({ language }) {
                 <br />
                 <br />
 
-                {t("We are fighting for")} <b className="purple">{t("justice")}</b> {t("for crimes against humanity and we will not stop until the trial of ")}<b className="red"> {t(" Ali Khamenei")}</b> {t("is held in")}  <b className="purple"> {t("Iran")}</b> {t("end_justice")}
+                {t("We are fighting for")} <b className="purple-bold">{t("justice")}</b> {t("for crimes against humanity and we will not stop until the trial of ")}<b className="red"> {t(" Ali Khamenei")}</b> {t("is held in")}  <b className="purple"> {t("Iran")}</b> {t("end_justice")}
 
                 <br />
                 <br />
