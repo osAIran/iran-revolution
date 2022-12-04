@@ -81,12 +81,15 @@ function NavBar() {
       <Container >
         <Navbar.Brand href="/" className="nav-brand"   >
           <img src="https://ik.imagekit.io/hcdblkujo/favi_icon_200x200.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669939942440" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 40, paddingRight: 0 }}>
-            {t("Women Life Freedom")} 
+            {t("Women Life Freedom")}
           </b>
 
 
         </Navbar.Brand>
-        <AudioPlayer url="assets/music/Barpakhiz.mp3" />
+        <AudioPlayer urls={['assets/music/سرود بیا از هنرمندان ناشناس.mp3', 'assets/music/سرود راه کوچه.mp3',
+          'assets/music/Shapur Marg Bar Kolle Nezam.mp3', 'assets/music/Toomaj Soorakh Moosh.mp3', 'assets/music/ای زن ای سرود زندگی.mp3',
+          'assets/music/Song4Leilas - soundcloud-1377138304.mp3', 'assets/music/zanam zanam zanam.mp3',
+          'assets/music/دست در دستهم.mp3', 'assets/music/Barpakhiz.mp3']} />
 
 
         <Navbar.Toggle

@@ -5,9 +5,9 @@ import useAudio from "./useAudio";
 // import TimeBar from "./TimeBar";
 import PlaybackButton from "./PlaybackButton";
 
-const AudioPlayer = ({ url }) => {
-    console.log(url);
-    const [audioElement, audioProps] = useAudio(url);
+const AudioPlayer = ({ urls }) => {
+    // console.log(url);
+    const [audioElement, audioProps] = useAudio(urls);
 
     // useEffect(() => {
         
