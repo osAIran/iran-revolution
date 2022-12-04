@@ -1,19 +1,19 @@
 
   .audio-player {
-    margin: 0 0;
+    
+    position: relative;
 
   }
   
   .controls {
     display: flex;
-    align-items: center;
   }
   
   .playback-button {
     transition: 0.2s;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #54b1c1;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--imp-text-color) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,15 +24,15 @@
   
   .playback-button svg {
     transition: 0.2s;
-    width: 18px;
-    height: 18px;
-    color: #54b1c1;
+    width: 12px;
+    height: 12px;
+    color: var(--imp-text-color) !important;
   }
   
   .playback-button:hover svg {
-    width: 18px;
-    height: 18px;
-    color: #73e7fb;
+    width: 16px;
+    height: 16px;
+    color: var(--imp-text-color) !important;
     transform: scale(1.03);
   }
   

@@ -79,14 +79,16 @@ function NavBar() {
       className={navColour ? "sticky" : expand ? "navbar" : "navbar-transparent"}
     >
       <Container >
-        <Navbar.Brand href="/" className="nav-brand" >
+        <Navbar.Brand href="/" className="nav-brand"   >
           <img src="https://ik.imagekit.io/hcdblkujo/favi_icon_200x200.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669939942440" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 40, paddingRight: 0 }}>
-            <Trans>
-              Women Life Freedom
-            </Trans>
+            {t("Women Life Freedom")} 
           </b>
+
+
         </Navbar.Brand>
         <AudioPlayer url="assets/music/Barpakhiz.mp3" />
+
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {

@@ -9,18 +9,10 @@ function useAudio(url) {
   const [isLoading, setLoading] = React.useState(true);
   const [isSeeking, setSeeking] = React.useState(false);
 
-  React.useEffect(() => {
-    if (isLoading === false) {
-      audioRef.current.play();
-      setPlaybackStatus("play");
-      // setLoading(true);
-    }
-  }, [isLoading]);
-
   return [
     <audio
       onLoadedData={() => {
-        setPlaybackStatus("play");
+        // setPlaybackStatus("play");
         setLoading(false);
         setDuration(audioRef.current.duration);
       }}
