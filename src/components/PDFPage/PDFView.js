@@ -47,7 +47,7 @@ function ResumeNew() {
         <Row style={{ position: "relative", justifyContent: "center" }}>
 
 
-          <ReactPlayer className="video-player"  url="https://youtu.be/aJb3uc1D1D8?t=65" />
+          <ReactPlayer className="video-player" url="https://youtu.be/aJb3uc1D1D8?t=65" />
 
 
         </Row>
@@ -67,7 +67,8 @@ function ResumeNew() {
           </Button> */}
         </Row>
 
-        {
+        
+        {/* {
           files.slice(1, 2).map((file, index) => {
             return (
               <div
@@ -86,7 +87,7 @@ function ResumeNew() {
             )
 
           })
-        }
+        } */}
 
         {files.map((file, index) => {
           return (

@@ -86,7 +86,7 @@ function NavBar() {
 
 
         </Navbar.Brand>
-        <AudioPlayer urls={['assets/music/سرود بیا از هنرمندان ناشناس.mp3', 'assets/music/سرود راه کوچه.mp3',
+        <AudioPlayer urls={['assets/music/Barpakhiz.mp3','assets/music/سرود بیا از هنرمندان ناشناس.mp3', 'assets/music/سرود راه کوچه.mp3',
           'assets/music/Shapur Marg Bar Kolle Nezam.mp3', 'assets/music/ای زن ای سرود زندگی.mp3',
           'assets/music/Song4Leilas - soundcloud-1377138304.mp3', 'assets/music/zanam zanam zanam.mp3',
           'assets/music/دست در دستهم.mp3', 'assets/music/Barpakhiz.mp3']} />
