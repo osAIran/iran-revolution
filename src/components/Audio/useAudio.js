@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-function useAudio(urls) {
+function useAudio(urls, url) {
 
   const audioRef = React.useRef(null);
   // const randIdx = Math.floor(Math.random() * urls.length);
 
-  const [urlState, setUrlState] = useState(urls[0]);
+  const [urlState, setUrlState] = useState(url);
 
   const [currentTime, setCurrentTime] = React.useState(0);
   const [duration, setDuration] = React.useState(0);
@@ -17,15 +17,16 @@ function useAudio(urls) {
 
     const random = Math.floor(Math.random() * urls.length);
     setUrlState(urls[random]);
+    setPlaybackStatus("play");
 
     // audioRef
 
   }
 
 
-    // if (playbackStatus == "play" && audioRef.current.playbackStatus == "pause") {
-    //   audioRef.current.play();
-    // }
+  // if (playbackStatus == "play" && audioRef.current.playbackStatus == "pause") {
+  //   audioRef.current.play();
+  // }
 
   return [
     <audio

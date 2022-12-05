@@ -148,7 +148,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/art"
+                to="/Art"
                 onClick={() => updateExpanded(false)}
                 style={{ paddingLeft: 0, paddingTop: 12 }}
               >
@@ -162,7 +162,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/lyrics"
+                to="/For"
                 style={{ padding: 0 }}
 
                 onClick={() => updateExpanded(false)}
@@ -175,7 +175,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/students-in-chains"
+                to="/Our-loved-ones"
                 style={{ padding: 0 }}
 
                 onClick={() => updateExpanded(false)}

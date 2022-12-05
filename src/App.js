@@ -46,13 +46,13 @@ function App() {
             <Route path="/fa" element={<Revolution language="fa" />} />
             <Route path="/en" element={<Revolution language="en" />} />
 
-            <Route path="/petition" element={<Home />} />
-            <Route path="/you-can-help-us" element={<Home />} />
-            <Route path="/project" element={<Projects />} />
-            <Route path="/about" element={<Revolution />} />
-            <Route path="/lyrics" element={<Lyrics />} />
-            <Route path="/art" element={<Gallery />} />
-            <Route path="/students-in-chains" element={<Gallery category={"chain"} />} />
+            <Route path="/Petition" element={<Home />} />
+            <Route path="/You-can-help-us" element={<Home />} />
+            {/* <Route path="/project" element={<Projects />} /> */}
+            <Route path="/About" element={<Revolution />} />
+            <Route path="/For" element={<Lyrics />} />
+            <Route path="/Art" element={<Gallery />} />
+            <Route path="/Our-loved-ones" element={<Gallery category={"chain"} />} />
 
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
