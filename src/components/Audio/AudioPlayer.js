@@ -7,7 +7,8 @@ import PlaybackButton from "./PlaybackButton";
 
 const AudioPlayer = ({ urls }) => {
     // console.log(url);
-    const [audioElement, audioProps] = useAudio(urls, urls[0]);
+    const rnd = Math.floor(Math.random() * urls.length);
+    const [audioElement, audioProps] = useAudio(urls, urls[rnd]);
 
     // useEffect(() => {
         
