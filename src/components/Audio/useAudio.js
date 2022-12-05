@@ -39,6 +39,7 @@ function useAudio(urls, url) {
       }}
       // onSeeking={() => setSeeking(true)}
       // onSeeked={() => setSeeking(false)}
+
       onEnded={() => playNext()}
       src={urlState}
       ref={audioRef}
