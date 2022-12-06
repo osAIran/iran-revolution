@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Suspense } from "react";
 import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Revolution from "./components/Home/Revolution";
 import Projects from "./components/Projects/Projects";
