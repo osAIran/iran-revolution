@@ -40,7 +40,7 @@ export default function Future() {
                 <Row md={8}>
                     <Col className="future-content">
                         <h2>
-                            <span className="purple">{t("Digital Transparency")}</span> {t("Every financial, organizational, and legal transaction will be recorded and available for public scrutiny")}
+                            <span className="purple">{t("Digital Transparency")}</span>{t("Every financial, organizational, and legal transaction will be recorded and available for public scrutiny")}
                         </h2>
                     </Col>
                 </Row>
