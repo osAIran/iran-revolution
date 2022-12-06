@@ -18,7 +18,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Particle from "./components/Particle";
-
+import Future from "./components/Future/Future";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -53,6 +53,7 @@ function App() {
             <Route path="/for" element={<Lyrics />} />
             <Route path="/art" element={<Gallery />} />
             <Route path="/our-loved-ones" element={<Gallery category={"chain"} />} />
+            <Route path="/future" element={<Future />} />
 
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>

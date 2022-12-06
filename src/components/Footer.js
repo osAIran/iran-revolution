@@ -26,7 +26,7 @@ function Footer() {
           <h3> {t("We are")} <span className="purple">{t("Revolutionary People, United")}</span> {t("all around the globe")}</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3> {t("Copyright")} {year.toLocaleString("fa", {
+          <h3> {t("Copyright")} {year.toLocaleString(i18n.language, {
             useGrouping: false
 
           })} {t("WLF")}</h3>

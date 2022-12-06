@@ -327,17 +327,21 @@ button:focus {
 }
 
 .bg-repeat {
-  position: absolute;
+  /* position: absolute; */
   z-index: -2;
+  /* background-image: url(Assets/bg.webp); */
   background-image: url(Assets/bg.webp);
-  background-position: center;
+  /* background-position: top; */
   width: 95%;
   padding: auto;
-  opacity: 0.3;
-
-
-  right: 0;
-  left: 0;
+  opacity: 0.4;
+  /* top: 0;/ */
+  
+  /* position: relative; */
+  background-repeat: repeat-y;
+  /* right: 0; */
+  /* left: 0; */
+  position: absolute;
 
 
 }
