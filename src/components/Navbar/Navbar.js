@@ -91,9 +91,9 @@ function NavBar() {
     >
       <Container >
         <Navbar.Brand href="/" className="nav-brand"   >
-          <img src="https://ik.imagekit.io/hcdblkujo/favi_icon_200x200.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669939942440" className="img-fluid logo" /> <b className="purple" style={{ paddingLeft: 40, paddingRight: 0 }}>
+          <img src="https://ik.imagekit.io/hcdblkujo/favi_icon_200x200.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669939942440" className="img-fluid logo" /> <span className="purple" style={{ paddingLeft: 40, paddingRight: 0 }}>
             {t("Women Life Freedom")}
-          </b>
+          </span>
 
 
         </Navbar.Brand>
