@@ -56,7 +56,7 @@ export default function Future() {
                 <Row>
                     <Col className="future-content">
                         <h2>
-                            {t("Please check out ")}<a href="https://future.wearemahsaamini.com" className="purple">{t("future forum")}</a> {t("for discussions on the future of the new Iran")}
+                            {t("Please check out ")}<a href="https://future.wearemahsaamini.com/t/topic/367" className="purple">{t("future forum")}</a> {t("for discussions on the future of the new Iran")}
                         </h2>
                     </Col>
 
