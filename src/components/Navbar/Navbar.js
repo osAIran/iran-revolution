@@ -208,6 +208,8 @@ function NavBar() {
               <Nav.Link
                 to="/future"
                 as={Link}
+                onClick={() => updateExpanded(false)}
+
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> <Trans>Future</Trans>
               </Nav.Link>
