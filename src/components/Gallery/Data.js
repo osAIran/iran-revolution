@@ -33,7 +33,20 @@ export default function GetImages(category = "all") {
         ]
 
 
-
+    const help = [
+        "assets/ایران/20.webp",
+        "assets/صدای ما باشید/18.webp",
+        "assets/صدای ما باشید/20.webp",
+        "assets/صدای ما باشید/19.webp",
+        "assets/صدای ما باشید/17.webp",
+        "assets/صدای ما باشید/10.webp",
+        "assets/صدای ما باشید/13.webp",
+        "assets/صدای ما باشید/12.webp",
+        "assets/صدای ما باشید/15.webp",
+        "assets/صدای ما باشید/11.webp",
+        "assets/صدای ما باشید/16.webp",
+        "assets/صدای ما باشید/14.webp",
+    ]
 
     const images = [
         "assets/صدای ما باشید/18.webp",
@@ -289,6 +302,10 @@ export default function GetImages(category = "all") {
 
     if (category == "chain") {
         return human_chain
+    }
+
+    if (category == "help"){
+        return help
     }
 
     if (category == "fa") {

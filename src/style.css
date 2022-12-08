@@ -761,6 +761,11 @@ button:focus {
   color: white;
 }
 
+.title-big {
+  color: white;
+  font-size: larger
+}
+
 
 .resume .resume-item {
   padding: 0 0 10px 25px;

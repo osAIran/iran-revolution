@@ -27,6 +27,9 @@ import {
   from "react-icons/gi";
 
 
+import { FaHandsHelping } from "react-icons/fa";
+
+import { BsFillFileEarmarkRichtextFill } from "react-icons/bs";
 
 import 'react-dropdown/style.css';
 
@@ -79,7 +82,53 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
 
-  const langText = isFa ? "EN" : "فارسی"
+  const langText = isFa ? "EN" : "فا"
+
+  const statementSection = <div>
+    <Nav.Item>
+      <Nav.Link
+        as={Link}
+        to="/posts"
+        onClick={() => updateExpanded(false)}
+        style={{ paddingLeft: 0, paddingTop: 12 }}
+      >
+        <BsFillFileEarmarkRichtextFill style={{ marginBottom: "2px", marginLeft: "4px" }} />
+        <Trans>Post</Trans>
+      </Nav.Link>
+    </Nav.Item>
+  </div>
+
+  const petition =
+    <Nav.Item style={{ paddingTop: 12, paddingLeft: 12 }} >
+      <HashLink smooth to="/petition" className="no-hyperlink"
+        onClick={() => updateExpanded(false)}
+
+      >
+        <MdHowToVote style={{ marginBottom: "2px" }} /> <Trans>Petition</Trans>
+      </HashLink>
+    </Nav.Item>
+
+  const help =
+    <Nav.Item  >
+      <Nav.Link
+        as={Link}
+        to="/how-can-you-help-us"
+        onClick={() => updateExpanded(false)}
+      >
+        <FaHandsHelping /> {t("Help Us")}
+      </Nav.Link>
+    </Nav.Item>
+
+  const future = <Nav.Item>
+    <Nav.Link
+      to="/future"
+      as={Link}
+      onClick={() => updateExpanded(false)}
+
+    >
+      <ImBlog style={{ marginBottom: "2px" }} /> <Trans>Future</Trans>
+    </Nav.Link>
+  </Nav.Item>
 
   return (
     <Navbar
@@ -91,7 +140,7 @@ function NavBar() {
     >
       <Container >
         <Navbar.Brand href="/" className="nav-brand"   >
-          <img src="https://ik.imagekit.io/hcdblkujo/favi_icon_200x200.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669939942440" className="img-fluid logo" /> <span className="purple" style={{ paddingLeft: 40, paddingRight: 0 }}>
+          <img src="https://ik.imagekit.io/hcdblkujo/favi_icon_200x200.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669939942440" className="img-fluid logo" /> <span className="purple" style={{ paddingLeft: 10, paddingRight: 0 }}>
             {t("Women Life Freedom")}
           </span>
 
@@ -136,14 +185,6 @@ function NavBar() {
               </HashLink>
             </Nav.Item> */}
 
-            <Nav.Item style={{ paddingTop: 12, paddingLeft: 12 }} >
-              <HashLink smooth to="/petition" className="no-hyperlink"
-                onClick={() => updateExpanded(false)}
-
-              >
-                <MdHowToVote style={{ marginBottom: "2px" }} /> <Trans>Petition</Trans>
-              </HashLink>
-            </Nav.Item>
 
             <Nav.Item style={{ paddingTop: 12, paddingRight: 12, paddingLeft: 12 }} >
               <HashLink smooth to="/" className="no-hyperlink"
@@ -154,14 +195,10 @@ function NavBar() {
               </HashLink>
 
 
-              {/* <Nav.Link
-                  as={Link}
-                  to="#about"
-                  onClick={() => updateExpanded(false)}
-                >
-                  <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-                </Nav.Link> */}
             </Nav.Item>
+            {
+              petition
+            }
 
             <Nav.Item>
               <Nav.Link
@@ -204,16 +241,11 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                to="/future"
-                as={Link}
-                onClick={() => updateExpanded(false)}
 
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> <Trans>Future</Trans>
-              </Nav.Link>
-            </Nav.Item>
+
+            {
+              !isFa ? help : future
+            }
 
             {/* <Nav.Item className="fork-btn">
               <Button

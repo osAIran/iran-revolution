@@ -19,6 +19,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Particle from "./components/Particle";
 import Future from "./components/Future/Future";
+import Help from "./components/Help/Help";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -47,8 +48,8 @@ function App() {
             <Route path="/en" element={<Revolution language="en" />} />
 
             <Route path="/petition" element={<Home />} />
-            <Route path="/how-you-can-help-us" element={<Home />} />
-            {/* <Route path="/project" element={<Projects />} /> */}
+            <Route path="/how-can-you-help-us" element={<Help />} />
+            <Route path="/posts" element={<Projects />} />
             <Route path="/about" element={<Revolution />} />
             <Route path="/for" element={<Lyrics />} />
             <Route path="/art" element={<Gallery />} />

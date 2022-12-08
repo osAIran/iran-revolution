@@ -19,6 +19,9 @@ import {
 }
   from "react-icons/md";
 
+import { FaHandsHelping } from "react-icons/fa";
+
+
 import { CSSTransition } from 'react-transition-group';
 import GetImages from "../Gallery/Data";
 import "./Revolution.css";
@@ -140,11 +143,11 @@ export default function About({ language }) {
             <Col md={4} className="myAvtar">
               {/* <img src="assets/20.jpeg" className="img-fuild" width={400} /> */}
               <div className="title">
-                {t("Please sign")}
+               <span className="main-title">{t("Please sign")}</span>
                 {
                   // if language is fa, skip petition
-                  isFa ? null : <HashLink className="petition-bold" smooth to="/petition" >
-                    <MdHowToVote style={{ marginBottom: "2px" }} /> {t("Our Petition")}
+                  isFa ? null : <HashLink className="help" smooth to="/how-you-can-help-us" >
+                    <FaHandsHelping style={{ marginBottom: "8px" }} /> {t("Our Petition")}
 
                   </HashLink>
                 }

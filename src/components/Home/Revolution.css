@@ -75,6 +75,23 @@
 
 }
 
+.help {
+    /* font-weight: bold; */
+    color: var(--imp-text-color);
+    font-size: 1.15em;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.help:hover {
+    color: #9F59C0;
+    /* font-size: 1.05em; */
+    /* text-align: center; */
+    /* font-weight: bold; */
+
+    text-decoration: underline;
+}
 
 @media (max-width: 1200px) {
     .icon_img {
@@ -97,8 +114,9 @@
     .purple-revolution-title {
         font-size: 1.8em;
     }
+
     .main-title {
-        
+
         text-align: center;
 
     }
