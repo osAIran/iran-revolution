@@ -146,7 +146,7 @@ export default function About({ language }) {
                <span className="main-title">{t("Please sign")}</span>
                 {
                   // if language is fa, skip petition
-                  isFa ? null : <HashLink className="help" smooth to="/how-you-can-help-us" >
+                  isFa ? null : <HashLink className="help" smooth to="/how-can-you-help-us" >
                     <FaHandsHelping style={{ marginBottom: "8px" }} /> {t("Our Petition")}
 
                   </HashLink>

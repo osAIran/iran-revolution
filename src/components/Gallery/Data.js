@@ -2,33 +2,31 @@
 export default function GetImages(category = "all") {
 
     const rev_aazar =
-        ["https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi_FRgYWQAADoA-.jpg",
+        [
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi4jrK2XwAMOR-I.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi6zVx2XwAEF3Z9.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi_xhiyWAAg2rXi.jpg",
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi_OrZ4XoAAuKrw.jpg",
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/photo_2022-12-03_02-21-47.jpg",
+            // "https://ik.imagekit.io/hcdblkujo/revolutionary_art/photo_2022-12-03_02-21-47.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/v.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/FjAAa1dXEA0JGgR.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi-9kMvXgAIYLZP.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi-9kMvXgAIYLZP.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670156736512",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi51nJyXoAEv_X-.jpg",
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/FijeyemXwAETraU.jpg",
+            // "https://ik.imagekit.io/hcdblkujo/revolutionary_art/FijeyemXwAETraU.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi_W4NtXkA05ZaH.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi1Z3d4WQAARmOe.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi-9kMvXgAIYLZP.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670156736512"
             ,
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Figtv6nVEAEsZRs.jpg",
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi6HEO7X0AEUA5t.jpg",
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/FimGy34WQAAOPAv.jpg",
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi6hsLNWIAESHiO.jpg",
+            // "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Figtv6nVEAEsZRs.jpg",
+            // "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi6HEO7X0AEUA5t.jpg",
+            // "https://ik.imagekit.io/hcdblkujo/revolutionary_art/FimGy34WQAAOPAv.jpg",
+            // "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi6hsLNWIAESHiO.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi9a12NXgAEtrth.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi-9kMvXgAIYLZP.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670156736512"
             ,
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/FisgEO5WYAAuuzS.jpg",
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/FirgUnMVUAIllZH.jpg",
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fije57xXgAEY3vF.jpg",
-            "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fije4aDXoAAcY4U.jpg",
+            // "https://ik.imagekit.io/hcdblkujo/revolutionary_art/FisgEO5WYAAuuzS.jpg",
+            // "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fije57xXgAEY3vF.jpg",
+            // "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fije4aDXoAAcY4U.jpg",
             "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi-9kMvXgAIYLZP.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670156736512"
         ]
 
@@ -49,6 +47,9 @@ export default function GetImages(category = "all") {
     ]
 
     const images = [
+        "https://ik.imagekit.io/hcdblkujo/revolutionary_art/Fi_OrZ4XoAAuKrw.jpg",
+        "https://ik.imagekit.io/hcdblkujo/revolutionary_art/FirgUnMVUAIllZH.jpg",
+
         "assets/صدای ما باشید/18.webp",
         "assets/صدای ما باشید/20.webp",
         "assets/صدای ما باشید/19.webp",
