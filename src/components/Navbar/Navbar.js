@@ -175,6 +175,9 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
 
           <Nav className="me-auto" defaultActiveKey="/" style={{ padding: 0 }}>
+            {
+              petition
+            }
 
             {/* <Nav.Item style={{ paddingTop: 12, paddingLeft: 12 }} >
               <HashLink smooth to="/petition" className="no-hyperlink"
@@ -196,9 +199,7 @@ function NavBar() {
 
 
             </Nav.Item>
-            {
-              petition
-            }
+
 
             <Nav.Item>
               <Nav.Link
